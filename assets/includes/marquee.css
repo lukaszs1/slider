@@ -1,0 +1,89 @@
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Lato:300|PT+Serif:400);
+
+body {  margin: 0px; padding: 10px; }
+.slide {
+	font-size: 16px;
+	height: 450px;
+	max-width: 1200px;
+	margin: 0 auto 20px auto;
+	border: 1px solid #ccc;
+	position: relative;
+
+}
+.mc1 {
+	position: absolute;
+	width: 100%;
+}
+.slide .slide_data {
+	display: none;
+
+}
+.marquee_nav {
+	position: absolute;
+	bottom: 5px;
+	left: calc(50% - 60px);
+	z-index: 5;
+}
+.marquee_nav div {
+	display: inline-block;
+	margin: 0 10px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #fff;
+	box-shadow: 0 0 3px 3px;
+	text-indent: -5000px;
+	cursor: pointer;
+
+}
+.caption {
+	position: absolute;
+	bottom: 50px;
+	color: #fff;
+	text-align: center;
+	margin: auto;
+	width: 80%;
+	left: 0;
+	right: 0;
+	z-index: 4;
+}
+.btn {
+    height: 40px;
+    width: 50px;
+    position: absolute;
+    z-index: 5;
+    top:50%;
+    cursor: pointer;
+}
+.prev{
+background-image: url('../images/arrow_left.svg');
+left: 5px;
+}
+.next{
+background-image: url('../images/arrow_right.svg');
+right: 5px
+}
+.overlay {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-image: linear-gradient(rgba(0,0,0,0)50%,rgba(0,0,0,.7)70%);
+}
+a.cta {
+    color: #000;
+    background: #fff;
+    padding: 7px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.caption h3 {
+	font-size: 29px;
+}
+
+
+
