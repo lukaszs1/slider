@@ -28,14 +28,16 @@ body {  margin: 0px; padding: 10px; }
 .marquee_nav div {
 	display: inline-block;
 	margin: 0 10px;
-	width: 20px;
-	height: 20px;
+	width: 15px;
+	height: 15px;
 	border-radius: 50%;
 	background-color: #fff;
 	box-shadow: 0 0 3px 3px;
 	text-indent: -5000px;
 	cursor: pointer;
-
+}
+.marquee_nav div.active {
+	background-color: #000;
 }
 .caption {
 	position: absolute;
@@ -84,6 +86,7 @@ a.cta {
 .caption h3 {
 	font-size: 29px;
 }
+
 
 
 
